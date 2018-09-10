@@ -25,5 +25,5 @@ def create(ssid, security, password, out):
         password=password,
     ))
     if out:
-        qr.png(out)
+        qr.png(out, scale=5)
     click.echo(qr.terminal())
